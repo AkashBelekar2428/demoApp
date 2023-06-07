@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-''nice pod .. its easy to use.. nice ''
+ 'nice pod .. its easy to use.. nice'
                      DESC
 
   s.homepage         = 'https://github.com/akashbelekar2428/TAAuth'
@@ -30,12 +30,13 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '12.0'
   s.swift_version = '5.0'
-  s.source_files = 'Source/**/*.{swift,xib,xcassets}'
   s.dependency 'Alamofire', '~> 5.4'
   s.dependency 'SVProgressHUD'
   s.dependency 'ObjectMapper', '~> 4.2'
-  s.resources = ['photo.xcassets']
-  
+  s.resources = 'Resources/*.xib', 'Fonts/*.ttf', 'Assets/*.xcassets'
+  s.source_files = 'Source/**/*.swift'
+
+
   # s.resource_bundles = {
   #   'TAAuth' => ['TAAuth/Assets/*.png']
   # }

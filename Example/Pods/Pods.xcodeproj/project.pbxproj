@@ -242,21 +242,17 @@
 			children = (
 				AE758DEE2A3039F400C60DC1 /* AlertManager.swift */,
 				AE758DE42A3039F400C60DC1 /* APIServices.swift */,
-				AE758DE32A3039F400C60DC1 /* authentication_font_file.ttf */,
+				AE758E152A303BE800C60DC1 /* Fonts */,
+				AE758E162A303BFD00C60DC1 /* Resources */,
+				AE758E142A303BD200C60DC1 /* Assets */,
 				AE758DD12A3039F200C60DC1 /* AuthenticationConfiguration.swift */,
 				AE758DE22A3039F400C60DC1 /* AuthenticationLogIn.swift */,
-				AE758DD62A3039F300C60DC1 /* AuthenticationLogIn.xib */,
 				AE758DD02A3039F200C60DC1 /* ComponentManager.swift */,
 				AE758DD72A3039F300C60DC1 /* DataPickerController.swift */,
-				AE758DD42A3039F300C60DC1 /* DataPickerController.xib */,
 				AE758DE72A3039F400C60DC1 /* Email_Address.swift */,
-				AE758DCF2A3039F200C60DC1 /* Email_Address.xib */,
 				AE758DEC2A3039F400C60DC1 /* MiddleLayer.swift */,
 				AE758DCE2A3039F200C60DC1 /* Mobile_Number.swift */,
-				AE758DF02A3039F400C60DC1 /* Mobile_Number.xib */,
-				AE758DDF2A3039F300C60DC1 /* photo.xcassets */,
 				AE758DE12A3039F400C60DC1 /* PINView.swift */,
-				AE758DE02A3039F300C60DC1 /* PINView.xib */,
 				AE758DE62A3039F400C60DC1 /* ReachabilityHelper.swift */,
 				AE758DEB2A3039F400C60DC1 /* TAAuthenticateRequest.swift */,
 				AE758DDB2A3039F300C60DC1 /* TAAuthenticateStartRequest.swift */,
@@ -277,6 +273,34 @@
 				AE758DE92A3039F400C60DC1 /* WsHelperProtocol.swift */,
 			);
 			path = Source;
+			sourceTree = "<group>";
+		};
+		AE758E142A303BD200C60DC1 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				AE758DDF2A3039F300C60DC1 /* photo.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		AE758E152A303BE800C60DC1 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				AE758DE32A3039F400C60DC1 /* authentication_font_file.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		AE758E162A303BFD00C60DC1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AE758DD62A3039F300C60DC1 /* AuthenticationLogIn.xib */,
+				AE758DD42A3039F300C60DC1 /* DataPickerController.xib */,
+				AE758DCF2A3039F200C60DC1 /* Email_Address.xib */,
+				AE758DF02A3039F400C60DC1 /* Mobile_Number.xib */,
+				AE758DE02A3039F300C60DC1 /* PINView.xib */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		B9D9C72223B069F3681792EED4583AA4 /* Pod */ = {
@@ -426,10 +450,10 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1300;
-				LastUpgradeCheck = 1300;
+				LastUpgradeCheck = 1420;
 				TargetAttributes = {
 					5314DA2878C69E95FB5B9B9C15B5FAFF = {
-						LastSwiftMigration = 1420;
+						LastSwiftMigration = "";
 					};
 				};
 			};
@@ -690,6 +714,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -818,6 +843,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
