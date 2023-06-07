@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TAAuth'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of TAAuth.'
+  s.version          = '1.1.0'
+  s.summary          = 'easy to use of TAAuth.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,8 +18,8 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+''nice pod .. its easy to use.. nice ''
+                     DESC
 
   s.homepage         = 'https://github.com/akashbelekar2428/TAAuth'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
@@ -28,9 +28,13 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/akashbelekar2428/TAAuth.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '10.0'
-
-  s.source_files = 'TAAuth/Classes/**/*'
+  s.ios.deployment_target = '12.0'
+  s.swift_version = '5.0'
+  s.source_files = 'Source/**/*.{swift,xib,xcassets}'
+  s.dependency 'Alamofire', '~> 5.4'
+  s.dependency 'SVProgressHUD'
+  s.dependency 'ObjectMapper', '~> 4.2'
+  s.resources = ['photo.xcassets']
   
   # s.resource_bundles = {
   #   'TAAuth' => ['TAAuth/Assets/*.png']

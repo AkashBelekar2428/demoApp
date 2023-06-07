@@ -1,0 +1,16 @@
+PODS:
+  - TAAuth (0.1.0)
+
+DEPENDENCIES:
+  - TAAuth (from `../`)
+
+EXTERNAL SOURCES:
+  TAAuth:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  TAAuth: 7bc94fe276a2ebc8a450a46ab474f6a7d05ebe4c
+
+PODFILE CHECKSUM: 02f567a7ad4f000aeac4e4bc72e9d7586fa4d8be
+
+COCOAPODS: 1.12.1
